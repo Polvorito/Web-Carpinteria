@@ -1,0 +1,120 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.titulo__principal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+}
+.titulo__principal h2, p{
+    font-family: 'Cookie', cursive;
+    font-size: 3rem;
+}
+.navegador ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 3em;
+    border-bottom: 1px solid black;
+    width: 75%;
+    margin: 0 auto;
+}
+.navegador li, a{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 1em;
+    padding: 32px;
+}
+.navegador a:hover{
+    color: #e17055;
+    transition: all 1.5s ease;
+}
+.horario{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    font-size: 2em;
+}
+.contacto{
+    display: flex;
+    background-color: #6ab04c;
+    margin-top: 40px;
+}
+.contacto p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+}
+.contacto2{
+    display: flex;
+    flex-direction: row;
+    background-color: #ff7979;
+    justify-content: end;
+    margin-top: 40px;
+}
+.contacto2 img{
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+.contacto2 p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    margin-right: 10%;
+}
+.formulario{
+    display: block;
+}
+@media screen and (max-width:468px){
+    .navegador ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:1240px){
+    .contacto{
+        width: 100%;
+    }
+    .contacto img{
+        width: 40%;
+        height: 40%;
+    }
+    .contacto2 img{
+        width: 30%;
+        height: 30%;
+    }
+    .contacto2{
+        margin: 40px 0;
+        width: 100%;
+    }
+    .horario{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:600px){
+    .contacto{
+        width: 100vw;
+    }
+    .contacto p{
+        font-size: 2em;
+    }
+    .contacto2{
+        width: 100vw;
+    }
+    .contacto2 p{
+        font-size: 2em;
+    }
+}
